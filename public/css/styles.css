@@ -1,0 +1,158 @@
+body {
+    background-color:#eaf1f3;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-brand {
+    font-size: 30px;
+}
+
+.footer {
+    margin-right: 1%;
+}
+
+.lineup {
+    margin-left: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.envFooter {
+    color: black;
+    background-color: #829bb4;
+}
+
+
+.intro-text, .located-text {
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.row {
+    margin-bottom: 11%;
+    margin-top: 11%;
+}
+.card {
+    margin: 2%;
+}
+
+.inputField {
+    height: 25px;
+    font-size: 15px;
+    width: 25%;
+    background-color: #eaf1f3;
+    border-top: #eaf1f3;
+    border-bottom: rgb(177, 177, 177) 1px solid;
+    border-left: #eaf1f3;
+    border-right: #eaf1f3;
+}
+
+.inputField:focus {
+    outline: none;
+    background-color: #eaf1f3;
+    border-top: #eaf1f3;
+    border-bottom: #829bb4 1px solid;
+    border-left: #eaf1f3;
+    border-right: #eaf1f3;
+}
+
+.inputField:active {
+    outline: none;
+    background-color: #eaf1f3;
+    border-top: #eaf1f3 1px solid;
+    border-bottom: #829bb4 1px solid;
+    border-left: #eaf1f3 1px solid;
+    border-right: #eaf1f3 1px solid;
+}
+
+.inputField:hover {
+    background-color: #eaf1f3;
+    border-top: #eaf1f3;
+    border-bottom: #829bb4 1px solid;
+    border-left: #eaf1f3;
+    border-right: #eaf1f3;
+}
+
+.buttonSubmit {
+    height: 40px;
+    width: 80px;
+    background-color: #829bb4;
+    color: #ffffff;
+    outline: none;
+    border: #829bb4 5px solid;
+    border-radius: 25px;
+
+}
+
+.buttonSubmit:hover {
+    background-color: #4d6277;
+    color: #ffffff;
+    outline: none;
+    border: #4d6277 5px solid;
+    border-radius: 25px;
+}
+.buttonSubmit:active {
+    background-color: #4d6277;
+    color: #ffffff;
+    outline: none;
+    border: #4d6277 5px solid;
+    border-radius: 25px;
+}
+
+.buttonSubmit:focus {
+    background-color: #4d6277;
+    color: #ffffff;
+    outline: none;
+    border: #4d6277 5px solid;
+    border-radius: 25px;
+}
+
+
+
+.announce {
+    text-align: center;
+
+}
+
+.indexCard {
+    width: 18rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    margin-right: auto; 
+    margin-left:auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.sliderCard {
+    width: 18rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    margin: 2%;
+    padding: 2%;
+}
+
+form {
+    text-align: center;
+}
+
+.glide__arrows {
+    margin: auto;
+}
+
+
+
+

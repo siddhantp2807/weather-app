@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>realWeather</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+
+<body>
+    <header>
+        {{>header}}
+    </header>
+    <main>
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                    <h2>Weather forecast using OpenWeather API</h2>
+                    <p>Correct and to-the-point current and future weather forecasts.</p>
+                </div>
+                <div class= "col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <img src="3815223-weather/weather.svg" height="80%" width="80%">
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="card text-center indexCard">
+                    <div class="card-body">
+                        <h5 class="card-title">{{first.name}}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{first.weather.main}}, {{first.weather.description}}</h6>
+                        <p class="card-text">
+                          {{first.main.temp}}&degC
+
+                        </p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Feels Like: {{first.main.feels_like}}&degC</li>
+                            <li class="list-group-item">Min. Temp: {{first.main.temp_min}}&degC</li>
+                            <li class="list-group-item">Max. Temp: {{first.main.temp_max}}&degC</li>
+                            <li class="list-group-item">Humidity: {{first.main.humidity}}%</li>
+                            <li class="list-group-item">Clouds: {{first.cloud.all}}%</li>
+                            <li class="list-group-item">Visibility: {{first.vis}} km</li>
+                            <li class="list-group-item">Wind Speed: {{first.wind.speed}} m/s</li>
+                            <li class="list-group-item">Timezone: {{first.timezone}} hrs</li>
+                            <li class="list-group-item">Sunrise at: {{first.sunrise}}</li>
+                            <li class="list-group-item">Sunset at: {{first.sunset}}</li>
+
+
+                        </ul>
+
+                        
+                    </div>
+                </div>
+                <div class="card text-center indexCard">
+                    <div class="card-body">
+                        <h5 class="card-title">{{second.name}}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{second.weather.main}}, {{second.weather.description}}</h6>
+                        <p class="card-text">
+                            {{second.main.temp}}&degC
+                
+                        </p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Feels Like: {{second.main.feels_like}}&degC</li>
+                            <li class="list-group-item">Min. Temp: {{second.main.temp_min}}&degC</li>
+                            <li class="list-group-item">Max. Temp: {{second.main.temp_max}}&degC</li>
+                            <li class="list-group-item">Humidity: {{second.main.humidity}}%</li>
+                            <li class="list-group-item">Clouds: {{second.cloud.all}}%</li>
+                            <li class="list-group-item">Visibility: {{second.vis}} km</li>
+                            <li class="list-group-item">Wind Speed: {{second.wind.speed}} m/s</li>
+                            <li class="list-group-item">Timezone: {{second.timezone}} hrs</li>
+                            <li class="list-group-item">Sunrise at: {{second.sunrise}}</li>
+                            <li class="list-group-item">Sunset at: {{second.sunset}}</li>
+                
+                
+                        </ul>
+                
+                
+                    </div>
+                </div>
+                <div class="card text-center indexCard">
+                    <div class="card-body">
+                        <h5 class="card-title">{{third.name}}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{third.weather.main}}, {{third.weather.description}}</h6>
+                        <p class="card-text">
+                           {{third.main.temp}}&degC
+                
+                        </p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Feels Like: {{third.main.feels_like}}&degC</li>
+                            <li class="list-group-item">Min. Temp: {{third.main.temp_min}}&degC</li>
+                            <li class="list-group-item">Max. Temp: {{third.main.temp_max}}&degC</li>
+                            <li class="list-group-item">Humidity: {{third.main.humidity}}%</li>
+                            <li class="list-group-item">Clouds: {{third.cloud.all}}%</li>
+                            <li class="list-group-item">Visibility: {{third.vis}} km</li>
+                            <li class="list-group-item">Wind Speed: {{third.wind.speed}} m/s</li>
+                            <li class="list-group-item">Timezone: {{third.timezone}} hrs</li>
+                            <li class="list-group-item">Sunrise at: {{third.sunrise}}</li>
+                            <li class="list-group-item">Sunset at: {{third.sunset}}</li>
+                
+                
+                        </ul>
+                
+                
+                    </div>
+                </div>
+            
+            
+            </div>
+            <div class="row">
+                <div class = "announce" style = "margin: auto;">
+                    <h2>Forecasts for all over the globe</h2>
+                    <p>Get current and daily weather data along with proper analysis for every coordinate.</p>
+                </div>
+                
+                
+            </div>
+            <div class = "row">
+                <a class = "text-center" href = "/forms"><button class = "buttonSubmit">Go</button></a>
+                
+            </div>
+            
+        </div>
+
+    </main>
+    <footer>
+        {{>footer}}  
+        
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+

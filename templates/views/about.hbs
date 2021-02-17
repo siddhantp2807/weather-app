@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>realWeather</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <header>
+        {{>header}}
+    </header>
+    <main>
+        <div class = "container-fluid">
+            <div class = "col">
+                <div class = "row">
+                    <div style="text-align: center;">
+                        <h2>About this Project</h2>
+                        <p>This project was made
+                            using the <a href="https://openweathermap.org/api">OpenWeather API</a>, Node.js, Express, Bootstrap, <a
+                                href="https://glidejs.com/">Glide.js</a> and a lot of
+                            dedication.</p>
+                        <span style="margin: 10%;"><i class="fab fa-node fa-5x"></i></span>
+                        <span style="margin: 10%;"><i class="fab fa-bootstrap fa-5x"></i></span>
+                        <p style = "margin-top: 5%;">Node.js was used to make the calls to the Openweather API and fetch the data, and Express.js, Bootstrap and
+                            Glide.js were used to display the information on the webpages.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </main>
+    <footer>
+        {{>footer}}
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
