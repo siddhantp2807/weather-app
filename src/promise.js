@@ -44,7 +44,6 @@ const parseData = function(arr) {
     arr.sunset = unixToHuman(arr.sunset, 1)
     return arr
 }
-const API_key = '0a988c0936426cf2b8d2c81c2e0b8851'
 
 const getDataFunc = (API_key, location, part) => {
     return new Promise((resolve, reject) => {
